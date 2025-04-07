@@ -1,7 +1,6 @@
 {
-  "version": 2,
   "functions": {
-    "api/send-sms.js": {
+    "api/**/*.js": {
       "runtime": "nodejs20.x"
     }
   }
