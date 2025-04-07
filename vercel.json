@@ -1,7 +1,15 @@
 {
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs20.x"
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/enviar-sms.js",
+      "use": "@vercel/node"
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/api/enviar-sms",
+      "dest": "api/enviar-sms.js"
+    }
+  ]
 }
